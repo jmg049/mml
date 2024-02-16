@@ -7,6 +7,11 @@ _backend = "python"
 _console = None
 
 
+def get_console():
+    global _console
+    return _console
+
+
 def set_backend(backend):
     assert backend in ["python", "rich"]
     global _backend
